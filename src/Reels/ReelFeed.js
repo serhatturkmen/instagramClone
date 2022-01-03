@@ -12,16 +12,16 @@ import { data } from "../data";
 const profile = data.users[0];
 
 export default function ReelFeed({ item, index, nowIndex }) {
-  console.log("index:", index);
-  console.log("nowindex:", nowIndex);
-
   const navigation = useNavigation();
+  const [volume,setVolume] = React.useState(7);
+
   const videoRef = React.useRef(null);
+  
   return (
     <View style={{ width: width, height: height }} key={index}>
       {/* Video */}
       <Video
-        volume={7.0}
+        volume={volume}
         // volume={0}
         style={{ width: width, height: height }}
         width={width}

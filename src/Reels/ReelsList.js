@@ -21,9 +21,13 @@ export default function ReelDetailScreen({ navigation }) {
   const [currIndex, setCurrIndex] = React.useState(0);
   const videoRef = React.useRef(null);
 
+  const [volume, setvolume] = React.useState(7);
+
   React.useEffect(() => {
-    videoRef.current = null;
-    console.log("test");
+    setvolume(7);
+    return () => {
+      setvolume(0);
+    };
   });
 
   const renderItem = ({ item, index }) => {
@@ -31,8 +35,7 @@ export default function ReelDetailScreen({ navigation }) {
       <View style={{ width: width, height: height }}>
         {/* Video */}
         <Video
-          volume={7.0}
-          // volume={0}
+          volume={volume}
           style={{ width: width, height: height }}
           width={width}
           height={height}
@@ -249,7 +252,6 @@ export default function ReelDetailScreen({ navigation }) {
   };
 
   const onChangeIndex = ({ index, prevIndex }) => {
-    console.log(index);
     setCurrIndex(index);
   };
 
