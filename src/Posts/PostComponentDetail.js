@@ -110,7 +110,7 @@ export default function PostComponentDetail({ navigation, route }) {
             >
               <Ionicons
                 style={{ marginRight: 10 }}
-                name={"ios-chatbubble-outline"}
+                name={"chatbubble-outline"}
                 color={"black"}
                 size={28}
               />
@@ -128,7 +128,7 @@ export default function PostComponentDetail({ navigation, route }) {
             </TouchableOpacity>
           </View>
           <Text></Text>
-          <Ionicons name={"ios-bookmark-outline"} color={"black"} size={28} />
+          <Ionicons name={"bookmark-outline"} color={"black"} size={28} />
         </View>
 
         {/* Like Number */}

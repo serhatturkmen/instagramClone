@@ -87,7 +87,7 @@ export default function ProfileScreen({ navigation }) {
               }}
               style={styles.textBar}
             >
-              <Text style={{ fontWeight: "bold" }}>0</Text>
+              <Text style={{ fontWeight: "bold" }}>{data.users[0].posts.length}</Text>
               <Text>Gönderi</Text>
             </TouchableOpacity>
             <TouchableOpacity
@@ -181,7 +181,6 @@ const styles = StyleSheet.create({
     justifyContent: "flex-end",
     paddingRight: 20,
   },
-
   profileImage: {
     width: width * 0.2,
     height: width * 0.2,

@@ -107,7 +107,7 @@ export default function PostFeed({ data }) {
             >
               <Ionicons
                 style={{ marginRight: 10 }}
-                name={"ios-chatbubble-outline"}
+                name={"chatbubble-outline"}
                 color={"black"}
                 size={28}
               />
@@ -130,7 +130,7 @@ export default function PostFeed({ data }) {
               alert("Kaydet");
             }}
           >
-            <Ionicons name={"ios-bookmark-outline"} color={"black"} size={28} />
+            <Ionicons name={"bookmark-outline"} color={"black"} size={28} />
           </TouchableOpacity>
         </View>
 
