@@ -22,7 +22,6 @@ export default function ReelFeed({ item, index, nowIndex }) {
       {/* Video */}
       <Video
         volume={volume}
-        // volume={0}
         style={{ width: width, height: height }}
         width={width}
         height={height}
@@ -41,7 +40,7 @@ export default function ReelFeed({ item, index, nowIndex }) {
           position: "absolute",
           top: 0,
           left: 0,
-          width: width - 20,
+          width: width,
           padding: 10,
           margin: 10,
           alignContent: "center",
