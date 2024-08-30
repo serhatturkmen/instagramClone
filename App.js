@@ -25,6 +25,7 @@ export default function App() {
       yy: "%d yıl",
     },
   });
+
   return (
     <NavigationContainer>
       <StatusBar />
@@ -32,5 +33,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-// 33 dakika
